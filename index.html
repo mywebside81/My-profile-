@@ -11,12 +11,21 @@
     <div class="profile-container">
         <!-- Profile Section -->
         <div class="profile-box">
+            <!-- Profile Photo Section -->
             <div class="profile-photo" id="profile-photo">
-                <img src="home.jpg" alt="Profile Photo" id="profile-img">
+                <img src="home.jpg" alt="Profile Photo" id="profile-img" onclick="toggleProfileAndPhonePe()">
             </div>
+
+            <!-- PhonePe Button (Initially Hidden) -->
+            <div id="phonepe-button" class="hidden">
+                <a href="#">
+                    <img src="Phonepa.png" alt="PhonePe Icon" onclick="openPhonePeApp()">
+                </a>
+            </div>
+
             <h1>Hi, I'm Rajkumar Toppo</h1>
             <p id="changing-text">Web Developer</p>
-            
+
             <!-- Contact Icons -->
             <div class="contact-row">
                 <a href="mailto:rajkumartoppo81@gmail.com">
