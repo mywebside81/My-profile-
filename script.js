@@ -14,3 +14,13 @@ function toggleProfileAndPhonePe() {
 function openPhonePeApp() {
     // This will be handled by the anchor tag deep link
 }
+
+// Change text every 2 seconds
+const changingText = document.getElementById('changing-text');
+const texts = ["Web Developer", "Gamer"];
+let index = 0
+
+setInterval(() => {
+    index = (index + 1) % texts.length;
+    changingText.textContent = texts[index];
+}, 2000);
