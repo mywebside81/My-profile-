@@ -10,9 +10,7 @@ function toggleProfileAndPhonePe() {
     profilePhoto.classList.toggle('fullscreen');
 }
 
-// Function to simulate opening PhonePe app and showing QR code for scanning
+// Function to simulate opening PhonePe app with deep link
 function openPhonePeApp() {
-    // Simulate QR code scanner
-    const qrWindow = window.open("", "QR Code Scanner", "width=300,height=300");
-    qrWindow.document.write('<img src="QR.png" alt="QR Code" style="width:100%;height:100%;">');
+    // This will be handled by the anchor tag deep link
 }
