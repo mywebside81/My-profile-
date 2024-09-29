@@ -76,8 +76,16 @@ p {
     transition: transform 0.3s ease;
 }
 
+/* PhonePe button specific size */
+#phonepe-button img {
+    width: 40px;  /* Size of PhonePe button */
+    height: 40px; /* Size of PhonePe button */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
 /* Hover effect on icons */
-.contact-row img:hover, .social-row img:hover {
+.contact-row img:hover, .social-row img:hover, #phonepe-button img:hover {
     transform: scale(1.1);
     transition: 0.3s ease;
 }
