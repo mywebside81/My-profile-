@@ -17,7 +17,7 @@ function openPhonePeApp() {
 
 // Change text every 2 seconds
 const changingText = document.getElementById('changing-text');
-const texts = ["Web Developer", "Gamer"];
+const texts = ["Web Developer", "Gammer"];
 let index = 0
 
 setInterval(() => {
