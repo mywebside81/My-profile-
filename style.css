@@ -6,11 +6,6 @@ body, html {
     background: url('Background.png') no-repeat center center fixed;
     background-size: cover;
     font-family: Arial, sans-serif;
-    transition: filter 0.3s ease; /* Background blur transition */
-}
-
-body.blur-background {
-    filter: blur(8px); /* Apply blur when profile is fullscreen */
 }
 
 .profile-container {
@@ -26,6 +21,7 @@ body.blur-background {
     padding: 20px;
     text-align: center;
     border-radius: 10px;
+    position: relative;
 }
 
 .profile-photo {
@@ -45,7 +41,12 @@ body.blur-background {
     width: 200px;
     height: 200px;
     border-radius: 15px; /* Rounded square */
-    transform: translateY(-50%);
+}
+
+/* Positioning PhonePe button below profile photo and above the text */
+#phonepe-button {
+    margin-top: 10px;
+    margin-bottom: 10px; /* Creates space between the profile photo and the text */
 }
 
 /* Headings and Text */
@@ -75,15 +76,24 @@ p {
     transition: transform 0.3s ease;
 }
 
-/* Style for icon names */
-.contact-row span, .social-row span {
-    display: block;
-    font-size: 12px; /* Font size for the names */
-    margin-top: 5px; /* Space between icon and name */
-}
-
 /* Hover effect on icons */
 .contact-row img:hover, .social-row img:hover {
     transform: scale(1.1);
     transition: 0.3s ease;
+}
+
+/* Hidden class for PhonePe button */
+.hidden {
+    display: none;
+}
+
+/* Show names for all icons except PhonePe */
+.contact-row a span, .social-row a span {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#phonepe-button a span {
+    display: none; /* Remove name for PhonePe button */
 }
