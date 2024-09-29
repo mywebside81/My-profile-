@@ -1,17 +1,18 @@
-// Toggle profile photo to fullscreen
-const profilePhoto = document.getElementById('profile-photo');
-const profileImg = document.getElementById('profile-img');
+// Function to toggle the visibility of PhonePe button and enlarge profile photo
+function toggleProfileAndPhonePe() {
+    const phonePeButton = document.getElementById('phonepe-button');
+    const profilePhoto = document.getElementById('profile-photo');
 
-profilePhoto.addEventListener('click', () => {
+    // Toggle phonepe button visibility
+    phonePeButton.classList.toggle('hidden');
+    
+    // Toggle profile photo size
     profilePhoto.classList.toggle('fullscreen');
-});
+}
 
-// Change text every 2 seconds
-const changingText = document.getElementById('changing-text');
-const texts = ["Web Developer", "Gamer"];
-let index = 0;
-
-setInterval(() => {
-    index = (index + 1) % texts.length;
-    changingText.textContent = texts[index];
-}, 2000);
+// Function to simulate opening PhonePe app and showing QR code for scanning
+function openPhonePeApp() {
+    // Simulate QR code scanner
+    const qrWindow = window.open("", "QR Code Scanner", "width=300,height=300");
+    qrWindow.document.write('<img src="QR.png" alt="QR Code" style="width:100%;height:100%;">');
+}
